@@ -1,0 +1,13 @@
+Dear {{ user.username }},
+
+Welcome to your author page admin account!
+
+To confirm your account please click on the following link:
+
+{{ url_for('confirm', token=token, _external=True) }}
+
+Thanks,
+
+Joe Stech
+Publisher
+compellingsciencefiction.com

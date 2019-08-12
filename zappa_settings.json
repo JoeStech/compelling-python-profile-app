@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "app_function": "profile-app.app",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "zappaapp",
+        "runtime": "python3.6",
+        "s3_bucket": "[enter dev bucket name here]"
+    },
+    "production": {
+        "app_function": "profile-app.app",
+        "aws_region": "us-east-1",
+        "profile_name": "default",
+        "project_name": "zappaapp",
+        "runtime": "python3.6",
+        "s3_bucket": "[enter prod bucket name here]",
+        "certificate_arn": "[enter arn here]",
+        "domain": "[enter custom domain here]"
+    }
+}

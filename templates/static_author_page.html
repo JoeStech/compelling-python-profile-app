@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>{{ item['username'] }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://pingendo.github.io/pingendo-bootstrap/themes/default/bootstrap.css" rel="stylesheet" type="text/css">
+    <style>
+    .bioimg {
+        width: 100%;
+    }
+    .ql-container.ql-snow {
+        border: none !important;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="navbar navbar-default navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                     
+                    <li><a href="http://compellingsciencefiction.com/">Current</a></li>
+                      
+                    <li><a href="https://www.patreon.com/compelling">Subscribe</a></li>
+                      
+                    <li><a href="http://compellingsciencefiction.com/backissues.html">Back Issues</a></li>
+                      
+                    <li><a href="http://compellingsciencefiction.com/reviews/reviews.html">Novel Reviews</a></li>
+                      
+                    <li><a href="http://compellingsciencefiction.com/blog/blog.html">Blog</a></li>
+                      
+                    <li><a href="http://compellingsciencefiction.com/submit.html">Submit a Story</a></li>
+                      
+                    <li class='active'><a href="http://compellingsciencefiction.com/authors.html">Authors</a></li>
+                      
+                    <li><a href="http://compellingsciencefiction.com/about.html">About Us</a></li>
+                     
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3"> <img src="../{{ item['photo_location'] }}" class="img-responsive"> </div>
+                <div class="col-md-9 lead">
+                    <h1>{{ item['username'] }}</h1>
+
+                        {{ item['bio'] | safe }}
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
